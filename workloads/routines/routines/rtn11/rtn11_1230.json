@@ -1,0 +1,38 @@
+{
+    "rtnID": "rtn11_1230",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "and",
+            "op1": {
+                "kind": ">",
+                "op1": "time", 
+                "op2": "500"
+            }, 
+            "op2": {
+                "kind": "<",
+                "op1": "time", 
+                "op2": "5000"
+            }
+        },
+        "op2": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "tsa_1230$mode",
+                "op2": "val4"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "tsa_1230$mode",
+                "op2": "val3"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1230$mode",
+            "newState": "val0"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+*.DS_Store
+.venv/
+.vscode/
+.settings/
+*.code-workspace
+*.class
+*.log
+target
+.idea/
+CoMesh.iml
+logs/
+outputs/
+*.pyc
+.classpath
+**/__pycache__/**

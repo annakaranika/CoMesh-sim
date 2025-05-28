@@ -1,0 +1,44 @@
+{
+    "rtnID": "rtn10_1404",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "tsa.1_1404$mode",
+                "op2": "val4"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "tsa.2_1404$mode",
+                "op2": "val3"
+            }
+        },
+        "op2": {
+            "kind": "or",
+            "op1": {
+                "kind": "<",
+                "op1": "tsa.1_1404$val",
+                "op2": "0.68"
+            },
+            "op2": {
+                "op1": {
+                    "kind": "<",
+                    "op1": "tsa.2_1404$val",
+                    "op2": "0.68"
+                }
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa.1_1404$val",
+            "newState": "0.68"
+        },
+        {
+            "devID": "tsa.2_1404$val",
+            "newState": "0.68"
+        }
+    ]
+}

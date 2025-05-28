@@ -1,0 +1,22 @@
+{
+    "rtnID": "rtn38_2203",
+    "conds": {
+        "kind": "and", 
+        "op1": {
+            "kind": "==",
+            "op1": "time",
+            "op2": "0"
+        },
+        "op2": {
+            "kind": "==",
+            "op1": "dwsa$val",
+            "op2": "val0"
+        } 
+    },
+    "cmds": [
+        {
+            "devID": "dwsa_2203$val",
+            "newState": "val1"
+        }
+    ]
+}

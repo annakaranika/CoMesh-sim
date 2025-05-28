@@ -1,0 +1,26 @@
+{
+    "rtnID": "rtn2_1127",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": ">",
+            "op1": "time",
+            "op2": "720000"
+        },
+        "op2": {
+            "kind": "<",
+            "op1": "time",
+            "op2": "2160000"
+        }
+    },
+    "cmds": [
+        {
+            "devID": "la.1_1127",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.2_1127",
+            "newState": "val0"
+        }
+    ]
+}

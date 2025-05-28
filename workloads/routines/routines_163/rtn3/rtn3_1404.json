@@ -1,0 +1,66 @@
+{
+    "rtnID": "rtn3_1404",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": ">",
+            "op1": "time",
+            "op2": "500"
+        },
+        "op2": {
+            "kind": "<",
+            "op1": "time",
+            "op2": "5000"
+        }
+    },
+    "cmds": [
+        {
+            "devID": "la.01_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.02_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.03_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.04_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.05_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.06_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.07_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.08_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.09_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.10_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.11_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.12_1404",
+            "newState": "val0"
+        }
+    ]
+}

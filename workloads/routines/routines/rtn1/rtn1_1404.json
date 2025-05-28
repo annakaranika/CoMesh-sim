@@ -1,0 +1,42 @@
+{
+    "rtnID": "rtn1_1404",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "and",
+            "op1": {
+                "kind": "==",
+                "op1": "acc(ms.1_1404, -360000, 1)",
+                "op2": "val0"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "acc(ms.2_1404, -360000, 1)",
+                "op2": "val0"
+            }
+        },
+        "op2": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "la.01_1404",
+                "op2": "val1"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "la.02_1404",
+                "op2": "val1"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "la.01_1404",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.02_1404",
+            "newState": "val0"
+        }
+    ]
+}

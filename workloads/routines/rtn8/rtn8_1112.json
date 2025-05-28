@@ -1,0 +1,31 @@
+{
+    "rtnID": "rtn8_1112",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "==",
+            "op1": "tsa_1112$mode",
+            "op2": "cooling_full"
+        },
+        
+        "op2": {
+            "kind": "and", 
+            "op1" : {
+                "kind": ">",
+                "op1": "tsa_1112$val",
+                "op2": "0.4"
+            },
+            "op2": {
+                "kind": "==", 
+                "op1": "acc(ms_1112, -360000, 1)", 
+                "op2": "val1"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1112$mode",
+            "newState": "val3"
+        }
+    ]
+}

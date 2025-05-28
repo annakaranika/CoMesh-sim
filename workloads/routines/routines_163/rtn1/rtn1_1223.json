@@ -1,0 +1,22 @@
+{
+    "rtnID": "rtn1_1223",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "==",
+            "op1": "acc(ms_1223, -360000, 1)",
+            "op2": "val0"
+        },
+        "op2": {
+            "kind": "==",
+            "op1": "la_1223",
+            "op2": "val1"
+        }
+    },
+    "cmds": [
+        {
+            "devID": "la_1223",
+            "newState": "val0"
+        }
+    ]
+}

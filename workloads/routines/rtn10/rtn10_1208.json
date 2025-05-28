@@ -1,0 +1,30 @@
+{
+    "rtnID": "rtn10_1208",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "tsa_1208$mode",
+                "op2": "val4"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "tsa_1208$mode",
+                "op2": "val3"
+            }
+        },
+        "op2": {
+            "kind": "<",
+            "op1": "tsa_1208$val",
+            "op2": "0.68"
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1208$val",
+            "newState": "0.68"
+        }
+    ]
+}

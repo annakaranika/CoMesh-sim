@@ -1,0 +1,38 @@
+{
+    "rtnID": "rtn8_1404",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "tsa.1_1404$mode",
+                "op2": "cooling_full"
+                },
+            "op2": {
+                "kind": "==",
+                "op1": "tsa.2_1404$mode",
+                "op2": "cooling_full"
+            }
+        },
+        "op2": {
+            "kind": "and", 
+            "op1" : {
+                "kind": ">",
+                "op1": "tsa_1404$val",
+                "op2": "0.4"
+            },
+            "op2": {
+                "kind": "==", 
+                "op1": "acc(ms_1404, -360000, 1)", 
+                "op2": "val1"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1404$mode",
+            "newState": "val3"
+        }
+    ]
+}

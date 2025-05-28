@@ -1,0 +1,31 @@
+{
+    "rtnID": "rtn14_east",
+    "conds": {
+        "kind": "and",
+        "op1": {
+        "kind": ">",
+            "op1": "tsa_1334$val", 
+            "op2": "0.4"
+        }, 
+        "op2": {
+            "kind": ">",
+            "op1": "ls.1_1334", 
+            "op2": "0.4"
+        }
+    },
+    "cmds": [
+        {
+            "devID": "sa.1_1334",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1334",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1330",
+            "newState": "val1"
+        }
+        
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "rtnID": "rtn2_1332",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "==",
+            "op1": "ms_1330",
+            "op2": "val1"
+        },
+        "op2": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "la.1_1330",
+                "op2": "val0"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "la.2_1330",
+                "op2": "val0"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "la.1_1330",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.2_1330",
+            "newState": "val1"
+        }
+    ]
+}

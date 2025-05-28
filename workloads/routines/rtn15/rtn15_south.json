@@ -1,0 +1,131 @@
+{
+    "rtnID": "rtn14_south",
+    "conds": {
+        "kind": "or",
+        "op1": {
+            "kind": "and",
+            "op1": {
+                "kind": "<",
+                "op1": "tsa_1220$val", 
+                "op2": "0.4"
+            }, 
+            "op2": {
+                "kind": "<",
+                "op1": "ls_1220.1", 
+                "op2": "0.4"
+            }
+        },
+        "op2": {
+            "kind": "and",
+            "op1": {
+                "kind": "<",
+                "op1": "tsa_1324$val", 
+                "op2": "0.4"
+            }, 
+            "op2": {
+                "kind": "<",
+                "op1": "ls_1324.1", 
+                "op2": "0.4"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "sa_1220.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1222.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1224.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1226.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1226.2",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1228.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1230.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1232.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1232.2",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1234.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1236.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1312.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1312.2",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1314.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1316.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1318.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1318.2",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1320.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1320.2",
+            "newState": "val0"
+        },
+        {
+
+            "devID": "sa_1320.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1322.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1322.2",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1324.1",
+            "newState": "val0"
+        },
+        {
+            "devID": "sa_1324.2",
+            "newState": "val0"
+        }
+    ]
+}

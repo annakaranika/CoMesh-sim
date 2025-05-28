@@ -1,0 +1,14 @@
+{
+    "rtnID": "rtn21_2203",
+    "conds": {
+        "kind": "==",
+        "op1": "tpsa_2203",
+        "op2": "val0"
+        },
+    "cmds": [
+        {
+            "devID": "tpsa_2203",
+            "newState": "val1"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "rtnID": "rtn6_1226",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "tsa_1226$mode",
+                "op2": "val2"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "tsa_1226$mode",
+                "op2": "val1"
+            }
+        },
+
+        "op2": {
+            "kind": ">",
+            "op1": "tsa_1226$val",
+            "op2": "0.74"
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1226$setpoint",
+            "newState": "0.74"
+        }
+    ]
+}

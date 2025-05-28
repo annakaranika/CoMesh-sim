@@ -1,0 +1,14 @@
+{
+    "rtnID": "rtn37_1101",
+    "conds": {
+        "kind": "==",
+        "op1": "time",
+        "op2": "2880000"
+        },
+    "cmds": [
+        {
+            "devID": "vsa_1101$val",
+            "newState": "val0"
+        }
+    ]
+}

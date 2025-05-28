@@ -1,0 +1,31 @@
+{
+    "rtnID": "rtn8_1303",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "==",
+            "op1": "tsa_1303$mode",
+            "op2": "cooling_full"
+        },
+        
+        "op2": {
+            "kind": "and", 
+            "op1" : {
+                "kind": ">",
+                "op1": "tsa_1303$val",
+                "op2": "0.4"
+            },
+            "op2": {
+                "kind": "==", 
+                "op1": "acc(ms_1303, -360000, 1)", 
+                "op2": "val1"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1303$mode",
+            "newState": "val3"
+        }
+    ]
+}

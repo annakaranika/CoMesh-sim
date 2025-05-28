@@ -1,0 +1,58 @@
+{
+    "rtnID": "rtn7_1404",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "and",
+            "op1" : {
+                "kind": ">",
+                "op1": "time", 
+                "op2": "720000"
+            }, 
+            "op2": {
+                "kind": "<",
+                "op1": "time", 
+                "op2": "2160000"
+            }
+        },
+        "op2": {
+            "kind": "or", 
+            "op1" : {
+                "kind": "or",
+                "op1": {
+                    "kind": "==",
+                    "op1": "tsa.1_1404$mode",
+                    "op2": "val2"
+                }, 
+                "op2": {
+                    "kind": "==",
+                    "op1": "tsa.2_1404$mode",
+                    "op2": "val2"
+                }
+            }, 
+            "op2" : {
+                "kind": "or",
+                "op1": {
+                    "kind": "==",
+                    "op1": "tsa.1_1404$mode",
+                    "op2": "val1"
+                },
+                "op2": {
+                    "kind": "==",
+                    "op1": "tsa.2_1404$mode",
+                    "op2": "val1"
+                }
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa.1_1404$mode",
+            "newState": "val0"
+        },
+        {
+            "devID": "tsa.2_1404$mode",
+            "newState": "val0"
+        }
+    ]
+}

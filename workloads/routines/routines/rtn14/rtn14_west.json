@@ -1,0 +1,94 @@
+{
+    "rtnID": "rtn14_west",
+    "conds": {
+        "kind": "or",
+        "op1": {
+            "kind": "and",
+            "op1": {
+                "kind": ">",
+                "op1": "tsa_1334$val", 
+                "op2": "0.4"
+            }, 
+            "op2": {
+                "kind": ">",
+                "op1": "ls.1_1334", 
+                "op2": "0.4"
+            }
+        },
+        "op2": {
+            "kind": "and",
+            "op1": {
+                "kind": ">",
+                "op1": "tsa_1129$val", 
+                "op2": "0.4"
+            }, 
+            "op2": {
+                "kind": ">",
+                "op1": "ls.1_1129", 
+                "op2": "0.4"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "sa.1_1111",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1111",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.3_1111",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1113",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1115",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1117",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1119",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1121",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1123",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1125",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1127",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.1_1129",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1129",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.3_1129",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.4_1129",
+            "newState": "val1"
+        }
+    ]
+}

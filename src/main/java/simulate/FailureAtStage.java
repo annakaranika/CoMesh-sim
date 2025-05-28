@@ -1,0 +1,9 @@
+package simulate;
+
+public enum FailureAtStage {
+    BEFORE_EPOCH_CHANGE_MEM,
+    DURING_EPOCH_CHANGE_MEM,
+    NO_FAILURE,
+    BEFORE_EPOCH_CHANGE_LEADER,
+    DURING_EPOCH_CHANGE_LEADER
+}

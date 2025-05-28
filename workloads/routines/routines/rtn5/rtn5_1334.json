@@ -1,0 +1,39 @@
+{
+    "rtnID": "rtn5_1334",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "==",
+            "op1": "tsa_1334$mode",
+            "op2": "val1"
+        },
+        "op2": {
+            "kind": "and",
+            "op1": {
+                "kind": "<",
+                "op1": "tsa_1334$val",
+                "op2": "0.4"
+            }, 
+            "op2" : {
+                "kind": "and", 
+                "op1": {
+                    "kind": "==", 
+                    "op1": "acc(ms_1334, -360000, 1)", 
+                    "op2": "val0"
+                },
+                "op2": {
+                    "kind": "==", 
+                    "op1": "ms_1334", 
+                    "op2": "val1"
+                }
+                
+            } 
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1334$mode",
+            "newState": "val2"
+        }
+    ]
+}

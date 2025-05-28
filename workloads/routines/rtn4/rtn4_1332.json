@@ -1,0 +1,30 @@
+{
+    "rtnID": "rtn4_1332",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "==",
+            "op1": "tsa_1332$mode",
+            "op2": "val1"
+        },
+        "op2": {
+            "kind": "and",
+            "op1": {
+                "kind": "<",
+                "op1": "tsa_1332$val",
+                "op2": "0.4"
+            }, 
+            "op2" : {
+                "kind": "==", 
+                "op1": "acc(ms_1332, -360000, 1)", 
+                "op2": "val1"
+            } 
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1332$mode",
+            "newState": "val1"
+        }
+    ]
+}

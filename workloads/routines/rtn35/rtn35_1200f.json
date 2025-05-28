@@ -1,0 +1,18 @@
+{
+    "rtnID": "rtn33_1200f",
+    "conds": {
+        "kind": "==",
+        "op1": "crs_1200f$authorized",
+        "op2": "val1"
+        },
+    "cmds": [
+        {
+            "devID": "dla_1200f",
+            "newState": "val1"
+        },
+        {
+            "devID": "doa_1200f",
+            "newState": "val1"
+        }
+    ]
+}

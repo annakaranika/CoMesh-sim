@@ -1,0 +1,56 @@
+{
+    "rtnID": "rtn5_1323",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "==",
+            "op1": "tsa_1323$mode",
+            "op2": "val1"
+        },
+        "op2": {
+            "kind": "and",
+            "op1": {
+                "kind": "<",
+                "op1": "tsa_1323$val",
+                "op2": "0.4"
+            }, 
+            "op2" : {
+                "kind": "and", 
+                "op1": {
+                    "kind": "or",
+                    "op1": {
+                        "kind": "==", 
+                        "op1": "acc(ms.1_1323, -360000, 1)", 
+                        "op2": "val0"
+                    },
+                    "op2": {
+                        "kind": "==", 
+                        "op1": "acc(ms.2_1323, -360000, 1)", 
+                        "op2": "val0"
+                    }
+                },
+                "op2": {
+                    "kind": "or",
+                    "op1": {
+                        "kind": "==", 
+                        "op1": "ms.1_1323", 
+                        "op2": "val1"
+                    },
+                    "op2": {
+                        "kind": "==", 
+                        "op1": "ms.2_1323", 
+                        "op2": "val1"
+                    }
+                    
+                }
+                
+            } 
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa_1323$mode",
+            "newState": "val2"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "rtnID": "<rtnID>",
+    "conds": {
+        "kind": "<logical operator (and, or, not, none)>",
+        "op1": {
+            "kind": "<relational operator>",
+            "op1": "<sensorID>",
+            "op2": "<value>"
+        },
+        "op2": {
+            "kind": "<relational operator>",
+            "op1": "<sensorID>",
+            "op2": "<value>"
+        }
+    },
+    "cmds": [
+        {
+            "newStateSensorID": "<sensorID>",
+            "newState": "<newState>",
+            "len": "<len>"
+        }
+    ]
+}

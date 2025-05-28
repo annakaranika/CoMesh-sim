@@ -1,0 +1,76 @@
+{
+    "rtnID": "rtn9_1404",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "tsa.1_1404$mode",
+                "op2": "val3"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "tsa.2_1404$mode",
+                "op2": "val3"
+            }
+        },
+        "op2": {
+            "kind": "and", 
+            "op1" : {
+                "kind": "or",
+                "op1": {
+                    "kind": ">",
+                    "op1": "tsa.1_1404$val",
+                    "op2": "0.4"
+                },
+                "op2": {
+                    "kind": ">",
+                    "op1": "tsa.2_1404$val",
+                    "op2": "0.4"
+                }
+            },
+            "op2": {
+                "kind": "and",
+                "op1": {
+                    "kind": "and",
+                    "op1": {
+                        "kind": "==", 
+                        "op1": "acc(ms.1_1404, -360000, 1)", 
+                        "op2": "val0"
+                    },
+                    "op2": {
+                        "kind": "==", 
+                        "op1": "acc(ms.2_1404, -360000, 1)", 
+                        "op2": "val0"
+                    }
+                },
+                "op2": {
+                    "kind": "or",
+                    "op1": {
+                        "kind": "==", 
+                        "op1": "ms.1_1404", 
+                        "op2": "val1"
+                    },
+                    "op2": {
+                        "kind": "==", 
+                        "op1": "ms.2_1404", 
+                        "op2": "val1"
+                    }
+                    
+                }
+            }
+            
+        }
+    },
+    "cmds": [
+        {
+            "devID": "tsa.1_1404$mode",
+            "newState": "val4"
+        },
+        {
+            "devID": "tsa.2_1404$mode",
+            "newState": "val4"
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "rtnID": "rtn14_south",
+    "conds": {
+        "kind": "or",
+        "op1": {
+            "kind": "and",
+            "op1": {
+                "kind": ">",
+                "op1": "tsa_1220$val", 
+                "op2": "0.4"
+            }, 
+            "op2": {
+                "kind": ">",
+                "op1": "ls_1220", 
+                "op2": "0.4"
+            }
+        },
+        "op2": {
+            "kind": "and",
+            "op1": {
+                "kind": ">",
+                "op1": "tsa_1324$val", 
+                "op2": "0.4"
+            }, 
+            "op2": {
+                "kind": ">",
+                "op1": "ls.1_1324", 
+                "op2": "0.4"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "sa_1220",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1224",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.1_1226",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1226",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1228",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1230",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.1_1232",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1232",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1234",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.1_1312",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1312",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1314",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa_1316",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.1_1318",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1318",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.1_1320",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1320",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.1_1322",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1322",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.1_1324",
+            "newState": "val1"
+        },
+        {
+            "devID": "sa.2_1324",
+            "newState": "val1"
+        }
+    ]
+}

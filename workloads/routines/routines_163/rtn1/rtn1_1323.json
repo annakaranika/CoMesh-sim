@@ -1,0 +1,42 @@
+{
+    "rtnID": "rtn1_1323",
+    "conds": {
+        "kind": "and",
+        "op1": {
+            "kind": "and",
+            "op1": {
+                "kind": "==",
+                "op1": "acc(ms.1_1323, -360000, 1)",
+                "op2": "val0"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "acc(ms.2_1323, -360000, 1)",
+                "op2": "val0"
+            }
+        },
+        "op2": {
+            "kind": "or",
+            "op1": {
+                "kind": "==",
+                "op1": "la.1_1323",
+                "op2": "val1"
+            },
+            "op2": {
+                "kind": "==",
+                "op1": "la.2_1323",
+                "op2": "val1"
+            }
+        }
+    },
+    "cmds": [
+        {
+            "devID": "la.1_1323",
+            "newState": "val0"
+        },
+        {
+            "devID": "la.2_1323",
+            "newState": "val0"
+        }
+    ]
+}

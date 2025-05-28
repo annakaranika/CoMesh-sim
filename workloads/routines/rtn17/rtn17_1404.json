@@ -1,0 +1,58 @@
+{
+    "rtnID": "rtn17_1404",
+    "conds": {
+        "kind": "==",
+        "op1": "psa_1404$val",
+        "op2": "val1"
+        },
+    "cmds": [
+        {
+            "devID": "la.01_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.02_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.03_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.04_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.05_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.06_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.07_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.08_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.09_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.10_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.11_1404$val",
+            "newState": "val1"
+        },
+        {
+            "devID": "la.12_1404$val",
+            "newState": "val1"
+        }
+    ]
+}
