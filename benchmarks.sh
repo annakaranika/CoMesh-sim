@@ -2,4 +2,4 @@
 
 mvn compiler:compile
 
-mvn exec:java -Dexec.args="-e 0 -rn 0 -dn 9 -dt grid3,3 -np 0.4 -ns cp0.0_uniform -f 1 -el 100 -rtt 5 -rd 9"
+mvn exec:java -Dexec.args="-e 0 -rn 0 -dn 9 -dts grid -dtd 3,3 -np 0.4 -cp 0.0 -nsd uniform -f 1 -el 100 -owd 5 -rd 9"

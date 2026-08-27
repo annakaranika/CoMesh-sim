@@ -11,3 +11,9 @@ outputs/
 target/
 workloads/*/*.txt
 **/__pycache__
+
+# outputs/ holds generated results, but outputs/scripts/ is source: the plot
+# scripts Simulator.java shells out to. Without this exception the ignore rule
+# above swallows them, which is why they were absent from the repository.
+!outputs/scripts/
+!outputs/scripts/*.py

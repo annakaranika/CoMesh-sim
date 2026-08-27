@@ -17,5 +17,21 @@ Workloads are automatically created when the `Simulator` is run.
 
 To run a simulation, you can execute:
 ```
-mvn exec:java -Dexec.args="-e 0 -rn 0 -dn 9 -dt grid3,3 -np 0.4 -ns cp0.0_uniform -f 1 -el 100 -rtt 5 -rd 9"
+mvn exec:java -Dexec.args="-e 0 -rn 0 -dn 9 -dts grid -dtd 3,3 -np 0.4 -cp 0.0 -nsd uniform -f 1 -el 100 -owd 5 -rd 9"
 ```
+
+Note on `-owd 5`: it replaces an older `-rtt 5`. One-way delay is not a
+round-trip time, so confirm the intended value before relying on results.
+
+The paper's actual experiments are the JUnit tests in
+`src/test/java/SimulatorTest.java` — each runs a sweep, writes a CSV under
+`outputs/<name>/`, and calls a Python plot script in `outputs/scripts/` to draw
+the figure:
+
+```
+mvn test -Dtest=SimulatorTest#inKGroupBenchmarkWOFailureTest
+```
+
+Plotting needs `python3` with matplotlib (and pandas for two of the scripts), and
+Maven must be run from the repository root. `EXPERIMENTS.md` documents every
+flag, every test, and which script draws which figure.
